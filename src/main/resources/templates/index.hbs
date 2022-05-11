@@ -1,0 +1,31 @@
+
+{{#partial "header"}}
+    <link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/app.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Sigmar+One&display=swap" rel="stylesheet">
+
+{{/partial}}
+
+
+{{#partial "content"}}
+    <div class ="container" id ="starter";>
+        <nav>
+            <div>
+                <h2><a href ='index.hbs'>Forest<span>Tracker</span> </a></h2>
+            </div>
+            <div class="butto">
+                <button id ="but1"><a href="animals.hbs"/><h3>View Animals</h3></a></button>
+                <button id ="but2"><a href="/animal"/><h3>Report sighting</h3></a></button>
+            </div>
+        </nav>
+    </div>
+    <div id ="top">
+        <img src="/images/lion.jpeg" alt ="lion">
+        <h1>Forest tracker</h1>
+        <p>"Wilderness without wildlife is just scenery"</hp>
+        <h3>_Lois Crisler_</h3>
+    </div>
+{{/partial}}
+{{> layout.hbs}}
