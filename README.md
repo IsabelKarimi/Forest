@@ -28,11 +28,8 @@ PostgreSQL
 
 Handlebars
 
-Markdown
-
 CSS
 
-Bootstrap
 
 # Support and contact details
 In case of any concerns you can reach me at ;
