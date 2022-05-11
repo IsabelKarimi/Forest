@@ -72,7 +72,6 @@ public class Animal implements DatabaseManagement {
         }
 
     }
-}
 
 
 
