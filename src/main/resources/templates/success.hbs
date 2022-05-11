@@ -1,17 +1,9 @@
-{{#partial "header"}}
-    <link rel='stylesheet' href='/success.css'>
-{{/partial}}
-
 {{#partial "content"}}
-    <div class="col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Success!!!</h3>
-                <p class="card-text">Sighting recorded successfully.</p>
-                <p class="card-text">Thank you for making the world a better place .</p>
-                <a href="/animals/new"class="btn btn-primary">Checkout Animals</a>
-            </div>
-        </div>
+<div class="d-flex align-items-center flex-column">
+<h4>Your sightings has successfully been recorded!</h4>
+<div>
+<a href="/sighten/main" class="btn btn-outline-info">VIEW ALL SIGHTINGS</a>
+</div>
+</div>
 {{/partial}}
-
-{{> layout.hbs}}
+{{>layout.hbs}}
