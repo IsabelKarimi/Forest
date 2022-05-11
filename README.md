@@ -1,7 +1,7 @@
 
 # Forest
 An application that allows Rangers to track wildlife sightings in the Douglas Fir forest.
-By Isabel Karimi
+# By Isabel Karimi
 # Description
 An application that allows Rangers to track wildlife sightings animals either endangered or not in the Douglas Fir. Forest
 
