@@ -1,0 +1,78 @@
+{{#partial "header"}}
+    <link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/app.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/form.css'>
+
+{{/partial}}
+
+
+{{#partial "content"}}
+    <div class ="container" id ="starter";>
+        <nav>
+            <div>
+                <h2><a href ='index.hbs'>Forest<span>Tracker</span> </a></h2>
+            </div>
+            <div class="butto">
+                <button id ="but1"><a href="animals.hbs"/><h3>View Animals</h3></a></button>
+                <button id ="but2"><a href="/animal"/><h3>Report sighting</h3></a></button>
+            </div>
+        </nav>
+    </div>
+    <div id = "from">
+        <img src ="/images/kinka.jpeg" alt="kinkachu">
+        <form action="/animal/new" method = "POST">
+
+            <div class="form-group">
+                <label for="name">Animal name</label>
+                <input id="name" name="name" class="form-control" type="text"  required>
+            </div>
+            <div class="form-group">
+                <label for="health">Health</label>
+                <select id="health" name="health" class="form-control" type="text"  required>
+                    <option value="health">Healthy</option>
+                    <option value="health">Ill</option>
+                    <option value="health">Okay</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type" name="type" class="form-control" type="text"  required>
+                    <option value="type">Endangered</option>
+                    <option value="type">Animal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Enter Age</label>
+                <select id="age" name="age" class="form-control" type="number"  required>
+                    <option value="age">Newborn</option>
+                    <option value="age">Young</option>
+                    <option value="age">Adult</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location">Health</label>
+                <select id="location" name="location" class="form-control" type="text" required>
+                    <option value="location">Zone A </option>
+                    <option value="location">Zone B </option>
+                    <option value="location">Zone C </option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="rangerName">Ranger_Name</label>
+                <input id="rangerName" name="rangerName" class="form-control" type="text"  required>
+            </div>
+
+            <button id="buto" type="submit" class="btn">Report</button>
+        </form>
+    </div>
+
+{{/partial}}
+
+{{#partial "footer"}}
+
+{{/partial}}
+{{> layout.hbs}}
